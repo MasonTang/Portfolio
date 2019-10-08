@@ -6,6 +6,14 @@ html {
     @include respond(mobile){
         font-size: 78%
     }
+
+    @include respond(tablet){
+        font-size: 90%
+    }
+
+    @include respond(tablet-horizontal){
+        font-size: 100%
+    }
 }
 
 .italic{

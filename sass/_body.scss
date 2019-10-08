@@ -7,10 +7,27 @@ main{
 #about{
   background-color: $color-grey;
   padding-bottom: 1rem;
+  display:flex;
+  flex-direction: column;
+
+  @include respond(tablet-horizontal){
+    flex-direction: row;
+  }
+
+  & img{
+    @include respond(tablet-horizontal){
+      text-align:center;
+      padding-left: 1rem;
+    }
+  }
 
   & p{
     margin-left:15px;
     margin-right:15px;
+
+    @include respond(tablet-horizontal){
+      text-align:center;
+    }
   }
 
   & h2{
@@ -33,22 +50,36 @@ main{
 
 }
 
-.bookmatcher{
-  width: 100%;
-}
 
-.gradeit{
-  width:100%;
-}
-
-.portfolio-logos img {
-  width:12%;
-  height:12%;
-}
 
 #portfolio{
   background-color: $color-grey;
 
+  & .portfolio-container{
+    padding-top:4rem;
+    display:flex;
+    flex-direction:column;
+
+    @include respond(tablet-horizontal){
+      flex-direction: row;
+    }
+  }
+
+  & .portfolio-img{
+    padding-bottom: 2rem;
+
+    @include respond(tablet-horizontal){
+      width: 50vw;
+    }
+  }
+
+  & p {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  
 
   & h2{
     margin-top: 3rem;
@@ -68,28 +99,4 @@ main{
   }
 }
 
-.portfolio-container{
-    padding-top:4rem;
 
-    & p {
-      padding-top: 2rem;
-      padding-bottom: 1rem;
-      padding-right: 1.5rem;
-      padding-left: 1.5rem;
-    }
-  }
-
-
-.github{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding-top:2rem;
-  padding-bottom: 2rem;
-
-  &-img{
-    width:4rem;
-    height:4rem;
-    
-  }
-}
