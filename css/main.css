@@ -107,6 +107,46 @@ main {
   font-family: "Permanent Marker", cursive;
 }
 
+.freelance {
+  background-color: white;
+}
+.freelance .portfolio-container {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 64em) {
+  .freelance .portfolio-container {
+    flex-direction: row;
+  }
+}
+.freelance .portfolio-img {
+  padding-bottom: 2rem;
+}
+@media only screen and (min-width: 64em) {
+  .freelance .portfolio-img {
+    width: 50vw;
+  }
+}
+.freelance p {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+.freelance h2 {
+  padding-top: 2rem;
+}
+.freelance h3 {
+  color: #08A4BD;
+  font-weight: 900;
+  font-family: "Permanent Marker", cursive;
+  padding-bottom: 1rem;
+}
+.freelance h4 {
+  font-family: "Permanent Marker", cursive;
+}
+
 #contact {
   color: white;
   padding-top: 3rem;
@@ -162,8 +202,15 @@ main {
 }
 @media only screen and (min-width: 75em) {
   .profile-img {
-    height: 50vh;
-    width: 28vw;
+    height: 20rem;
+    width: 20rem;
+    padding-top: 3rem;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .profile-img {
+    height: 25rem;
+    width: 25rem;
     padding-top: 3rem;
   }
 }
